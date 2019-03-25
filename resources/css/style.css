@@ -1,0 +1,530 @@
+/* -------------------------------------------------- */
+/* OSNOVNA PODESAVANJA */
+/* -------------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow: hidden;
+}
+
+.clearfix {zoom: 1}
+.clearfix:after {
+content: '.';
+clear: both;
+display: block;
+height: 0;
+visibility: hidden;
+}
+
+/* -------------------------------------------------- */
+/* KOMPONENTE KOJE SE KORISTE NA CIJELOM SAJTU */
+/* -------------------------------------------------- */
+
+section {
+    padding: 80px 0px;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.box {
+    padding: 1%;
+}
+
+/* HEDINZI */
+
+h1,
+h2,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+/* LINKOVI */
+
+a:link,
+a:visited {
+    color: #e67e22;
+    text-decoration: none;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #e67e22;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
+
+
+/* -------------------------------------------------- */
+/* HEDER */
+/* -------------------------------------------------- */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/stw.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.hero-tekst {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.hero-tekst h1 {
+    color: #fff;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 3px;
+    word-spacing: 4px;    
+    margin-bottom: 60px;
+    font-size: 300%;
+}
+
+.hero-tekst a:link, 
+.hero-tekst a:visited {
+    padding: 10px 15px;
+    border: 3px solid #e67e22;
+    margin-right: 30px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.hero-tekst a:hover,
+.hero-tekst a:active {
+    background-color: #e67e22;
+    border-radius: 30px;
+}
+
+.logo-div {
+    text-align: center;
+}
+
+.logo {
+    height: 80px;
+    width: auto;
+    margin-top: 20px;
+}
+
+
+.naslovna {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.81);
+}
+
+/* main navi */ /*
+.main-nav {
+    float: right;
+    list-style: none;  
+    margin-top: 43px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #e67e22;
+}
+*/
+
+
+
+
+/* -------------------------------------------------- */
+/* SEKCIJA ABOUT */
+/* -------------------------------------------------- */
+
+.section-about {
+    height: 100vh;
+    background-attachment: fixed;
+    padding: 20px;
+}
+
+.section-about h2 {
+    font-size: 280%;
+    text-align: center;
+    word-spacing: 2px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    margin-top: 40px;
+}
+
+.section-about h2:after {
+    display: block;
+    height: 3px;
+    background-color: #e67e22;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.logo-about {
+    margin-top: 50px;
+}
+
+.logo-about img {
+    width: 85%;
+    margin-top: 50px;
+}
+
+.logo-about h3 {
+    font-size: 200%;
+    font-weight: 500;
+    border-left: 3px solid #e67e22;
+    padding: 5px 15px;
+}
+
+.logo-about p {
+    margin-top: 30px;
+    text-align: justify;
+}
+
+.social-about {
+    margin-top: 40px;
+}
+
+.logo-about i {
+    font-size: 350%;
+    padding: 35px;
+}
+
+.logo-about a {
+    text-decoration: none;
+    border: none;
+}
+
+.logo-about a:first-child {
+    color:  #517fa4;
+}
+
+.logo-about a:first-child:hover, 
+.logo-about a:first-child:active {
+    color:  #e67e22;
+}
+
+.logo-about a:nth-child(2) {
+    color:  #3b5998;
+}
+
+.logo-about a:nth-child(2):hover, 
+.logo-about a:nth-child(2):active {
+    color:  #e67e22;
+}
+
+.logo-about a:nth-child(3) {
+    color:  #55acee;
+}
+
+.logo-about a:nth-child(3):hover, 
+.logo-about a:nth-child(3):active {
+    color:  #e67e22;
+}
+
+.logo-about a:last-child {
+    color:  #dc4e41;
+}
+
+.logo-about a:last-child:hover, 
+.logo-about a:last-child:active {
+    color:  #e67e22;
+}
+
+
+
+/* -------------------------------------------------- */
+/* SEKCIJA FEEDBACK */
+/* -------------------------------------------------- */
+
+.section-feedback {
+    padding: 0;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    clear: both;
+}
+
+.section-feedback video {
+    width: 100%;
+}
+
+.video-container {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+blockquote {
+    font-style: italic;
+    line-height: 145%;
+    padding: 2%;
+    position: relative;
+    margin-top: 40px;
+    color: #fff;
+    z-index: 1;
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+    
+
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+cite img {
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+    
+}
+
+.color-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+/* -------------------------------------------------- */
+/* SEKCIJA JELA */
+/* -------------------------------------------------- */
+
+.section-portfolio {
+    height: 100vh;
+    background-attachment: fixed;
+    overflow: hidden;
+    padding: 20px;
+}
+
+/* Masonry grid */
+.masonry {
+  transition: all .5s ease-in-out;
+  column-gap: 30px;
+  column-fill: initial;
+}
+
+/* Masonry item */
+.masonry .brick {
+  margin-bottom: 30px;
+  display: inline-block; /* Fix the misalignment of items */
+  vertical-align: top; /* Keep the item on the very top */
+}
+
+/* Masonry image effects */
+.masonry .brick img {
+  transition: all .5s ease-in-out;
+  backface-visibility: hidden; /* Remove Image flickering on hover */
+    max-width: 100%;
+}
+
+.masonry .brick:hover img {
+  opacity: .75;
+}
+
+/* Masonry on tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+
+/* Masonry on big screens */
+@media only screen and (min-width: 1024px) {
+  .desc {
+    font-size: 1.25em;
+  }
+
+  .intro {
+    letter-spacing: 1px;
+  }
+
+  .masonry {
+    column-count: 4;
+  }
+}
+
+
+
+/* -------------------------------------------------- */
+/* SEKCIJA KONTAKT */
+/* -------------------------------------------------- */
+
+.section-contact {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/mediterranean-346997_1920.jpg);
+    padding: 0;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+    clear: both;
+}
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea,
+#contact button[type="submit"] {
+  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+  background: #fff;
+  padding: 25px;
+  margin: 150px 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  border-radius: 15px;
+}
+
+#contact h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #e67e22;
+  border-radius: 5px;
+  background: #fff;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: 4px solid #e67e22;
+  border-radius: 2px;
+  background: #fff;
+  color: #e67e22;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 100%;
+  font-weight: 500;
+}
+
+#contact button[type="submit"]:hover {
+  background: #e67e22;
+  color: #fff;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+
+
+
+
+
+
+
+
+
+
